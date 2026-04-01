@@ -1,0 +1,129 @@
+:root {
+    color-scheme: light;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f5f9;
+    color: #1e2330;
+}
+
+.app-shell {
+    max-width: 860px;
+    margin: 32px auto;
+    padding: 24px;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.app-header p {
+    margin: 8px 0 0;
+    color: #4c556a;
+}
+
+.chat-log {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #d8dfec;
+    border-radius: 12px;
+    background: #ffffff;
+    min-height: 360px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 80%;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+}
+
+.message.user {
+    margin-left: auto;
+    background: #1f6feb;
+    color: #ffffff;
+}
+
+.message.assistant {
+    margin-right: auto;
+    background: #eef2fa;
+}
+
+.chat-form {
+    margin-top: 16px;
+}
+
+.chat-form textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 12px;
+    border: 1px solid #b9c4d8;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.chat-actions {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chat-actions button {
+    border: none;
+    border-radius: 8px;
+    background: #1f6feb;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 16px;
+}
+
+.chat-actions button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.status-text {
+    min-height: 1.2em;
+    color: #4c556a;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (max-width: 640px) {
+    .app-shell {
+        margin: 0;
+        padding: 12px;
+    }
+
+    .chat-log {
+        min-height: 300px;
+    }
+
+    .message {
+        max-width: 92%;
+    }
+}
+

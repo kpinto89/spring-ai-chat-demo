@@ -25,9 +25,12 @@ Get-ChildItem Env:GITHUB_TOKEN
 mvn spring-boot:run
 ```
 
+## Use the UI
+
+Open `http://localhost:8080/` in your browser and chat from the page.
+
 ## Test endpoint
 
 ```powershell
 Invoke-RestMethod "http://localhost:8080/chat?prompt=Hello"
 ```
-
