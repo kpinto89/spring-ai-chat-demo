@@ -1,0 +1,10 @@
+spring:
+  ai:
+    openai:
+      base-url: https://models.inference.ai.azure.com
+      api-key: ${GITHUB_TOKEN}
+      chat:
+        completions-path: /chat/completions
+        options:
+          model: gpt-4.1-mini
+          temperature: 0.7
