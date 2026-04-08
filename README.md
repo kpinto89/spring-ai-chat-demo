@@ -29,6 +29,13 @@ mvn spring-boot:run
 
 Open `http://localhost:8080/` in your browser and chat from the page.
 
+## Swagger / OpenAPI
+
+Once the app is running, open:
+
+- Swagger UI: `http://localhost:8080/swagger-ui/index.html`
+- OpenAPI JSON: `http://localhost:8080/v3/api-docs`
+
 ## Test endpoint
 
 ```powershell
